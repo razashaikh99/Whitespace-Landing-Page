@@ -4,7 +4,7 @@ import Footer from '../Common/Footer'
 
 export default function HomePage() {
   return (
-    <div>
+    <div className=''>
       <Navbar />
       {/* <Footer /> */}
     </div>

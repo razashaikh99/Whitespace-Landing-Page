@@ -1,12 +1,20 @@
 @import "tailwindcss";
 
-@theme {
-    --color-primary: #043873; /* Dark Blue */
-    --color-secondary: #4F9CF9; /* Light Blue */
-    --color-accent: #FFE492; /* Light Yellow */
-    --color-foreground: #FFFFFF; /* White */
-}
-
 body {
     font-family: "Inter", sans-serif;
+}
+
+@theme {
+    --color-primary: #043873;
+    /* Dark Blue */
+    --color-secondary: #4F9CF9;
+    /* Light Blue */
+    --color-accent: #FFE492;
+    /* Light Yellow */
+    --color-foreground: #FFFFFF;
+    /* White */
+}
+
+.mycontainer {
+    @apply px-4 sm:px-10 md:px-30 lg:px-28;
 }
