@@ -5,6 +5,7 @@ import HeroSection from '../Sections/HeroSection'
 import SecondSection from '../Sections/SecondSection'
 import ThirdSection from '../Sections/ThirdSection'
 import FourthSection from '../Sections/FourthSection'
+import FifthSection from '../Sections/FifthSection'
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
       <SecondSection />
       <ThirdSection />
       <FourthSection />
+      <FifthSection />
       {/* <Footer /> */}
     </div>
   )
