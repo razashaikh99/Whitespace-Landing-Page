@@ -1,7 +1,7 @@
 import Button from '../Components/Button'
 import rightIcon from '../assets/icons/right-icon.svg'
 
-export default function PricingSection() {
+export default function FifthSection() {
     return (
         <div className="w-full py-20 bg-white">
             <div className="mycontainer">

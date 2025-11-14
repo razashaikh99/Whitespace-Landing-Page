@@ -6,6 +6,7 @@ import SecondSection from '../Sections/SecondSection'
 import ThirdSection from '../Sections/ThirdSection'
 import FourthSection from '../Sections/FourthSection'
 import FifthSection from '../Sections/FifthSection'
+import SixthSection from '../Sections/SixthSection'
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
       <ThirdSection />
       <FourthSection />
       <FifthSection />
+      <SixthSection />
       {/* <Footer /> */}
     </div>
   )
