@@ -4,6 +4,7 @@ import Footer from '../Common/Footer'
 import HeroSection from '../Sections/HeroSection'
 import SecondSection from '../Sections/SecondSection'
 import ThirdSection from '../Sections/ThirdSection'
+import FourthSection from '../Sections/FourthSection'
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
       <HeroSection />
       <SecondSection />
       <ThirdSection />
+      <FourthSection />
       {/* <Footer /> */}
     </div>
   )

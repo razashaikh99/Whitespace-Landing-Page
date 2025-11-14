@@ -26,7 +26,6 @@ export default function SecondSection() {
                     </div>
                 </div>
             </div>
-
             <div className='w-full h-auto min-h-[700px] py-8 lg:py-20 pb-20'>
                 <div className='relative z-10 mycontainer h-full flex flex-col lg:flex-row justify-between items-center gap-8'>
                     <div className='w-full lg:w-1/2 order-1 lg:order-1 mb-8 lg:mb-0'>
