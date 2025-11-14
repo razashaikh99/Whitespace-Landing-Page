@@ -53,12 +53,12 @@ export default function Navbar() {
                 <button className='hidden md:flex lg:hidden'
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                 >
-                    <img src={menuIcon} alt="menu" className="w-6 h-6" />
+                    <img src={menuIcon} alt="menu" className="w-6 h-6 cursor-pointer" />
                 </button>
                 <button className='flex md:hidden'
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                 >
-                    <img src={menuIcon} alt="menu" className="w-6 h-6" />
+                    <img src={menuIcon} alt="menu" className="w-6 h-6 cursor-pointer" />
                 </button>
             </div>
             {isMenuOpen && (
