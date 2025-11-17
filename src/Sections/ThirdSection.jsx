@@ -15,7 +15,7 @@ export default function ThirdSection() {
                         <Button text="Let's Go" />
                     </div>
                 </div>
-                <div className='w-full lg:w-200 h-64 lg:h-137 bg-[#C4DEFD] order-2 lg:order-1 mb-8 lg:mb-0'></div>
+                <div className='w-full lg:w-200 h-64 lg:h-137 bg-background order-2 lg:order-1 mb-8 lg:mb-0'></div>
             </div>
         </div>
     )

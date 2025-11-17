@@ -22,7 +22,7 @@ export default function SecondSection() {
                             <Button text="Get Started" />
                         </div>
                     </div>
-                    <div className='w-full lg:w-1/2 h-64 lg:h-140 bg-[#C4DEFD] order-1 lg:order-2 mb-8 lg:mb-0 flex items-center justify-center'>
+                    <div className='w-full lg:w-1/2 h-64 lg:h-140 bg-background order-1 lg:order-2 mb-8 lg:mb-0 flex items-center justify-center'>
                     </div>
                 </div>
             </div>

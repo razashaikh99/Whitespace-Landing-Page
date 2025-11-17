@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Logo from '../../public/logo/logo.png'
 import Button from '../Components/Button'
 import downArrow from '../assets/icons/down-arrow.svg'
@@ -6,9 +6,29 @@ import menuIcon from '../assets/icons/menu-icon.svg'
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const menuRef = useRef(null)
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (menuRef.current && !menuRef.current.contains(event.target)) {
+                setIsMenuOpen(false)
+            }
+        }
+        const handleScroll = () => {
+            setIsMenuOpen(false)
+        }
+        if (isMenuOpen) {
+            document.addEventListener('mousedown', handleClickOutside)
+            document.addEventListener('scroll', handleScroll)
+        }
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside)
+            document.removeEventListener('scroll', handleScroll)
+        }
+    }, [isMenuOpen])
 
     return (
-        <div>
+        <div className="relative z-50" ref={menuRef}>
             <div className='mycontainer bg-primary text-white w-full h-[92px] flex justify-between items-center'>
                 <div className='w-auto'>
                     <img
@@ -37,7 +57,7 @@ export default function Navbar() {
                         </div>
                     </div>
                     <div className='flex gap-6'>
-                        <button className='bg-accent rounded-lg px-10 py-4 text-primary cursor-pointer'>Login</button>
+                        <button className='bg-accent rounded-lg px-10 py-3 text-primary cursor-pointer'>Login</button>
                         <Button text="Try Whitepace free" />
                     </div>
                 </div>
@@ -62,30 +82,30 @@ export default function Navbar() {
                 </button>
             </div>
             {isMenuOpen && (
-                <div className='lg:block xl:hidden bg-primary text-white py-6 px-4 space-y-6'>
+                <div className='lg:block xl:hidden bg-primary text-white py-6 px-4 space-y-6 fixed top-[92px] left-0 w-full z-40 shadow-2xl'>
                     <div className='flex flex-col space-y-4'>
-                        <div className='flex justify-between items-center border-b border-white/20 pb-2 cursor-pointer'>
+                        <div className='flex justify-between items-center border-b border-white/20 pb-2 cursor-pointer' onClick={() => setIsMenuOpen(false)}>
                             <p>Products</p>
                             <img className='h-1.5' src={downArrow} alt="arrow" />
                         </div>
-                        <div className='flex justify-between items-center border-b border-white/20 pb-2 cursor-pointer'>
+                        <div className='flex justify-between items-center border-b border-white/20 pb-2 cursor-pointer' onClick={() => setIsMenuOpen(false)}>
                             <p>Solutions</p>
                             <img className='h-1.5' src={downArrow} alt="arrow" />
                         </div>
-                        <div className='flex justify-between items-center border-b border-white/20 pb-2 cursor-pointer'>
+                        <div className='flex justify-between items-center border-b border-white/20 pb-2 cursor-pointer' onClick={() => setIsMenuOpen(false)}>
                             <p>Resources</p>
                             <img className='h-1.5' src={downArrow} alt="arrow" />
                         </div>
-                        <div className='flex justify-between items-center border-b border-white/20 pb-2 cursor-pointer'>
+                        <div className='flex justify-between items-center border-b border-white/20 pb-2 cursor-pointer' onClick={() => setIsMenuOpen(false)}>
                             <p>Pricing</p>
                             <img className='h-1.5' src={downArrow} alt="arrow" />
                         </div>
                     </div>
-                    <div className='flex justify-center gap-4 pt-4 lg:hidden'>
-                        <button className='bg-accent rounded-lg px-6 py-3 text-primary w-full text-center font-semibold cursor-pointer'>
+                    <div className='flex flex-col gap-4 pt-4 lg:hidden'>
+                        <button className='bg-accent rounded-lg px-6 py-3 text-primary text-center font-semibold cursor-pointer' onClick={() => setIsMenuOpen(false)}>
                             Login
                         </button>
-                        <div className='w-full'>
+                        <div className='w-full' onClick={() => setIsMenuOpen(false)}>
                             <Button text="Try Whitepace free" />
                         </div>
                     </div>

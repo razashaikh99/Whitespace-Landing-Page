@@ -3,11 +3,12 @@ import Button from '../Components/Button'
 
 export default function HeroSection() {
   return (
-    <div>
+    <div className="relative z-10">
       <div className='w-full h-auto min-h-[700px] bg-primary relative text-white'>
         <img
           className='absolute inset-0 w-full h-full object-cover opacity-70'
           src={element}
+          alt="background"
         />
         <div className='relative z-10 mycontainer h-full flex flex-col lg:flex-row justify-between items-center gap-8 py-10'>
           <div className='max-w-2xl text-center lg:text-left order-2 lg:order-1'>
@@ -21,7 +22,7 @@ export default function HeroSection() {
               <Button text="Try Whitepace free" />
             </div>
           </div>
-          <div className='w-full lg:w-200 h-64 lg:h-137 bg-[#C4DEFD] order-2 lg:order-1 mb-8 lg:mb-0'></div>
+          <div className='w-full lg:w-200 h-64 lg:h-137 bg-background order-2 lg:order-1 mb-8 lg:mb-0'></div>
         </div>
       </div>
     </div>
