@@ -24,7 +24,7 @@ export default function HomePage() {
       <SeventhSection />
       <EighthSection />
       <NinthSection />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }
