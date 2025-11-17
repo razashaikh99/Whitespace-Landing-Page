@@ -9,7 +9,7 @@ export default function SeventhSection() {
     return (
         <div>
             <div className='w-full h-auto min-h-[700px] py-8 lg:py-20 pb-20'>
-                <div className='relative z-10 mycontainer h-full flex flex-col lg:flex-row justify-between items-center gap-8'>
+                <div className='pt-14 relative z-10 mycontainer h-full flex flex-col lg:flex-row justify-between items-center gap-8'>
                     <div className='w-full lg:w-1/2 order-1 lg:order-1 mb-8 lg:mb-0'>
                         <img
                             className='w-full max-w-md mx-auto lg:max-w-150'
@@ -29,14 +29,34 @@ export default function SeventhSection() {
                         </div>
                     </div>
                 </div>
-                <div className='text-[#212529] font-bold pt-20 md:pt-28 lg:pt-35 text-center text-4xl md:text-5xl lg:text-6xl'>
-                    <p>Our sponsors</p>
-                </div>
-                <div className='mycontainer py-15 md:py-20 lg:py-25 flex justify-between items-center gap-10'>
-                    <img className='' src={AppleLogo} />
-                    <img className='' src={MicrosoftLogo} />
-                    <img className='' src={SlackLogo} />
-                    <img className='' src={GoogleLogo} />
+                <div className='w-full bg-white py-10'>
+                    <div className='text-[#212529] font-bold pt-20 md:pt-28 lg:pt-35 text-center text-4xl md:text-5xl lg:text-6xl'>
+                        <p>Our sponsors</p>
+                    </div>
+                    <div className='mycontainer py-15 md:py-20 lg:py-25'>
+                        <div className='grid grid-cols-2 md:grid-cols-4 gap-15 justify-items-center items-center'>
+                            <img
+                                src={AppleLogo}
+                                alt="Apple"
+                                className='w-14 h-auto md:w-12 lg:w-20'
+                            />
+                            <img
+                                src={MicrosoftLogo}
+                                alt="Microsoft"
+                                className='w-40 h-auto md:w-40 lg:w-60'
+                            />
+                            <img
+                                src={SlackLogo}
+                                alt="Slack"
+                                className='w-40 h-auto md:w-40 lg:w-60'
+                            />
+                            <img
+                                src={GoogleLogo}
+                                alt="Google"
+                                className='w-40 h-auto md:w-40 lg:w-60'
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

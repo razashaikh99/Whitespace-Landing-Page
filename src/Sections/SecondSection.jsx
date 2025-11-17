@@ -12,7 +12,7 @@ export default function SecondSection() {
                 />
                 <div className='relative z-10 mycontainer h-full flex flex-col lg:flex-row justify-between items-center gap-8 py-10 lg:py-20'>
                     <div className='max-w-2xl text-center lg:text-left order-1 lg:order-2 w-full lg:w-1/2'>
-                        <div className='text-[#212529] font-bold leading-18 text-4xl md:text-5xl lg:text-6xl'>
+                        <div className='text-[#212529] font-bold leading-12 lg:leading-18 text-4xl md:text-5xl lg:text-6xl'>
                             <p>Project <br /> Management</p>
                         </div>
                         <div className='text-[#212529] font-light py-6 md:py-8 lg:py-10 text-lg'>
