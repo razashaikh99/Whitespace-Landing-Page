@@ -28,7 +28,7 @@ export default function NinthSection() {
                             </div>
                             <div className='flex justify-start items-center gap-4 md:gap-6'>
                                 <div>
-                                    <img className='w-16 h-16 md:w-20 md:h-20 lg:w-26 lg:h-26 rounded-full' src={Avatar1} alt="Oberon Shaw" />
+                                    <img className='w-20 md:w-25 lg:w-30 object-cover rounded-full' src={Avatar1} alt="Oberon Shaw" />
                                 </div>
                                 <div>
                                     <p className='font-medium text-lg md:text-xl text-gray-900'>Oberon Shaw, MCH</p>
@@ -50,7 +50,7 @@ export default function NinthSection() {
                             </div>
                             <div className='flex justify-start items-center gap-4 md:gap-6'>
                                 <div>
-                                    <img className='w-16 h-16 md:w-20 md:h-20 lg:w-26 lg:h-26 rounded-full' src={Avatar2} alt="Oberon Shaw" />
+                                    <img className='w-20 md:w-25 lg:w-30 object-cover rounded-full' src={Avatar2} alt="Oberon Shaw" />
                                 </div>
                                 <div>
                                     <p className='font-medium text-lg md:text-xl text-primary'>Oberon Shaw, MCH</p>
@@ -72,7 +72,7 @@ export default function NinthSection() {
                             </div>
                             <div className='flex justify-start items-center gap-4 md:gap-6'>
                                 <div>
-                                    <img className='w-16 h-16 md:w-20 md:h-20 lg:w-26 lg:h-26 rounded-full' src={Avatar3} alt="Oberon Shaw" />
+                                    <img className='w-20 md:w-25 lg:w-30 object-cover rounded-full' src={Avatar3} alt="Oberon Shaw" />
                                 </div>
                                 <div>
                                     <p className='font-medium text-lg md:text-xl text-primary'>Oberon Shaw, MCH</p>
