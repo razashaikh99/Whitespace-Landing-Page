@@ -45,18 +45,15 @@ Whitepace is a professional landing page designed to showcase project management
 1. **Clone the repository**
    ```bash
    git clone https://github.com/razashaikh99/Whitespace-Landing-Page.git
-   cd whitepace-landing-page
+   cd Whitespace-Landing-Page
 
-   Install dependencies
+2. **Install dependencies**
+    ```bash
+    npm install
 
-   bash
-npm install
-
-bash
-npm run dev
-
-bash
-npm run build ```
+3. **Run development server**
+    ```bash
+    npm run dev
 
 ## 📁 Project Structure
 
